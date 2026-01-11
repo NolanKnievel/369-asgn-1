@@ -58,7 +58,7 @@ def main():
             timestamp = datetime(year, month, day, hour)
 
             # check if within date range
-            if start <= timestamp <= end:
+            if start <= timestamp < end:
                 color = row['pixel_color']
                 coordinate = row['coordinate']
 
